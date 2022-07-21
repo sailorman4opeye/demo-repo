@@ -1,4 +1,4 @@
-# Playing around on the feature-test branch
+# Commands
 cd folder name
 cd ../ //go to up directory
 ls -la //list all files and folders in your directory
