@@ -1,3 +1,4 @@
+# Playing around on the feature-test branch
 cd folder name
 cd ../ //go to up directory
 ls -la //list all files and folders in your directory
@@ -11,7 +12,7 @@ git remote <github url> //link existing local project to github repo
 git branch //to check branches available and * which branch we're currently in
 git checkout //switch bsetween various branches
 git checkout -b feature-14-description //create new branch with the name feature-14-description
-#to merge feature branch witht the master branch checkout master to switch to master branch
+#to merge feature branch with the master branch checkout master to switch to master branch
 git diff feature-14-description //gives differences between the master and the feature branch
 
 # Ways to merge branch to the master
