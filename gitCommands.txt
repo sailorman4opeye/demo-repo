@@ -1,0 +1,61 @@
+cd folder name
+cd ../ //go to up directory
+ls -la //list all files and folders in your directory
+git clone <github url>
+git status //gives status of untracked files
+git add //tracks untracked files
+git commit -m "commit message" -m "commit description" //commits only to local git
+git init //use this command inside of your project to turn it into a Git repository and start using Git with that codebase
+git push origin master
+git remote <github url> //link existing local project to github repo
+git branch //to check branches available and * which branch we're currently in
+git checkout //switch bsetween various branches
+git checkout -b feature-14-description //create new branch with the name feature-14-description
+#to merge feature branch witht the master branch checkout master to switch to master branch
+git diff feature-14-description //gives differences between the master and the feature branch
+
+# Ways to merge branch to the master
+git merge feature-14-description //to merge feature branch with master
+// A more common way is to first push the branch and then create a pull request PR
+git checkout feature-14-description
+git status //to check the status of commits
+git push origin feature-14-description
+
+git branch -d feature-14-description //delete the branch
+
+# In case of merge conflicts
+//The master branch keeps updating whilst you're working on your branch. You must pull latest changes in the github master to your local master and then try to merge your feature branch with the local master with git merge master. In case of conflicts use the code editor to manually accept/reject changes and rid the conflict markers. 
+// No make another commit.
+git commit -am "updated with master" //-am to add and commit at the same time iff there's only one file MODIFIED and not ADDED
+
+# To undo a git add command
+git reset <file name optional>
+# To undo the last commit command
+git reset HEAD~1 // HEAD~2 for going back two commits
+# To see all commits
+git log
+# To reset to a specific commit copy its hash and
+git reset <hash> // This only unstages the changes
+# To change local files also
+git reset --hard <hash> 
+
+
+# Commands from Faraday
+repo -> repository
+
+clone -> bring a repo down from the internet (remote repository like Github) to your local machine
+
+add -> track your files and changes with Git
+
+commit -> save your changes into Git
+
+push -> push your changes to your remote repo on Github (or another website)
+
+pull -> pull changes down from the remote repo to your local machine
+
+status -> check to see which files are being tracked or need to be commited
+
+init -> use this command inside of your project to turn it into a Git repository and start using Git with that codebase
+
+# Generating a new SSH key and adding it to ssh-agent
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
